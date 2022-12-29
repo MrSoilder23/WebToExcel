@@ -3,7 +3,7 @@ import pandas as pd
 
 data = []
 
-for turn in range(1, 55):
+for turn in range(1, 56):
 
     Usr_input = input("Its page " + str(turn) + " awaiting for next page...")
     if Usr_input != "":
@@ -35,7 +35,7 @@ for turn in range(1, 55):
 
 df = pd.DataFrame(data)
 
-df.to_excel(r'./dane.xlsx', index=False)
+df.to_csv(r'./dane.csv', index=False)
 
 print("Program has stopped")
 
